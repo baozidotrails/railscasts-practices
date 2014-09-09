@@ -17,12 +17,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :author_ids, "Authors" %><br/>
-    <%= f.collection_select :author_ids, Author.order(:name), :id, :name, {}, { multiple: true } %>
-
-    <%# if we didn't have form_for() method, then the arguments look like: %>
-    <%# collection_select(:book, :author_ids, Author.order(:name), :id, :name, {}, { multiple: true }) %>
-
+    <%= f.label :author_token, "Authors" %> <br>
+    <%= f.text_field :author_token, data: { load: @book.authors } %>
   </div>
 
   <div class="actions">

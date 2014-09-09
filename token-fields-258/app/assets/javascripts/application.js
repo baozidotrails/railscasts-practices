@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require chosen-jquery
 //= require jquery.turbolinks
+//= require jquery.tokeninput
 //= require_tree .
 //= require turbolinks
